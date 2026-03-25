@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 全域手機版 */
+:root{
+    font-size: 16px;
+}
+body{
+        background: url(../images/bg.jpg) repeat-y;
+        background-position: center;
+        width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+button{
+    border: none;
+}
+section{
+    padding: 20px;
+}
+#banner{
+    background: url("../images/phone/Banner.png") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size:100% ;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:100px ;
+}
+.container{
+    margin: auto;
+    width: 90%;
+    background-color: rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.des{
+    font-family:  "Inter", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.start{
+    background-color: #292F36;
+    border-radius: 15px;
+    padding: 26px 38px;
+    color: white;
+    margin: 15x 0px ;
+    font-size: 1.15rem;
+}
+i{
+    color: #CDA274;
+    font-size: 1.15rm;
+}
+/* 第二區塊 */
+#intro{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#intro .container{
+    background-color:transparent;
+}
+
+.intro-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+.intro-text{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:  "Inter", sans-serif;
+    font-size: 1.15rem;
+    color: #292F36;
+    line-height: 1.5;
+}
+.readmore{
+    margin: 35px;
+    font-family:  "Inter", sans-serif;
+    font-weight: 500;
+}
+/* 第三區塊 */
+#about .container{
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+} 
+.intro-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order:1;
+}
+.section-title{
+    margin: auto;
+    font-size: 1.15rem;
+}
+#about .des{
+    margin: 15px;
+}
+.intro-img img{
+    width: 100%;
+    margin: 30px auto;
+    border-bottom-left-radius:120px ;
+    border-top-right-radius:120px ;
+}
+.section-title{
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f8e5d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:15px ;
+}
+.circle-icon i{
+    font-size:2.2rem ;
+}
+.title{
+    font-weight: 700;
+
+}
+.text{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+#about .start{
+    margin-top: 20px;
+}
+/* 第四區塊 */
+#people .container{
+    background-color: #F4F0EC;
+    padding: 10PX;
+}
+#people .intro-text{
+    text-align: left;
+    margin:30px 
+   
+}
+.peoplebox{
+    background-color:white ;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#people img {
+    object-fit:cover;
+}
+#people .group{
+    width: 90%;
+    margin: auto;
+    justify-content: flex-start;
+}
+/* 第五區塊 */
+#clint .container{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+#clint .clint-img{
+    width: 60%;
+    margin: 30px;
+ 
+}
+#clint .clint-img img{
+    width: 100%;
+}
+/* 平板版本 */
+    @media screen and (min-width:541px) and (max-width:1024px){
+        #banner{
+        background: url("../images/tablet/Banner.jpg") no-repeat;
+        background-size: 100% ;
+        background-position: bottom center;
+        }
+        .container{
+        background-color:transparent;
+        justify-content: flex-start;
+        }
+        .hero-info{
+        width: 45%;
+        }
+        .hero-info h1{
+            font-size: 50px;
+        }
+        #banner .des{
+            font-size: 24px;
+        }
+/* 第二區塊 */
+        #intro .container {
+            display: flex;
+            flex-direction: row;
+        }
+        #intro .container .intro {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .intro-title{
+            font-size: 2.5rem;
+
+        }
+        .intro-text{
+            margin: 15px 0px;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+        .readmore{
+            font-size: 1.5rem;
+        }
+/* 第三區塊 */
+         #about .container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+        .intro-img img{
+            width: 100%;
+            border-radius:0;
+        }
+        .intro-box {
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+            padding: 10px;
+       }
+        .intro-box .group{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+       }
+        #about .section-title{
+            font-size: 2.3rem;
+            text-align: left;
+       }
+        #about .des{
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 0;
+            padding-bottom: 15px;
+       }
+        #about .title{
+            font-size: 1.5rem;
+            text-align: left;
+       }
+        #about .text{
+            font-size: 1.5rem;
+            text-align: left;
+       }
+        #about .start{
+            font-size: 1.5rem;
+            width: 100%;
+       }
+/* 第四區塊 */
+       #people .container{
+        display: flex;
+        flex-direction:column;
+        align-items: center ;
+       }
+       #people .intro-title-div{
+        width: 60%;
+       }
+       #people .peoplebox-div{
+        display: flex;
+        flex-direction:row;
+       }
+       #people .peoplebox{
+        display: flex;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+       }
+        #people .peoplebox .group{
+        display: flex;
+        flex-direction:row;
+       }
+
+}
+/* 電腦版本 */
+    @media screen and (min-width:1025px)  {
+        :root{
+            font-size: 18px;
+        }
+        #banner{
+            background: url("../images/Banner.jpg") no-repeat;
+            background-size:100% ;
+            background-position: bottom center;
+            height: 800px;
+            border-bottom-left-radius:300px ;
+        }
+        .container{
+        background-color:transparent;
+        justify-content: flex-start;
+        width: 70%;
+        max-width: 1440px;
+        }
+        h1{
+        font-size: 4rem;
+        }
+        .hero-info{
+        width: 50%;
+        }
+        .hero-info .des{
+        font-size: 1.25rem;
+        }
+        .start{
+        font-size:1.5rem;
+        }
+/* 第二區塊 */
+ #intro .container {
+            display: flex;
+            flex-direction: row;
+        }
+        #intro .container .intro {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+         
+        }
+        .intro-title{
+            font-size: 2.5rem;
+
+        }
+        .intro-text{
+            margin: 15px 0px;
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+        .readmore{
+            font-size: 1.5rem;
+        }
+/* 第三區塊 */
+         #about .container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+        .intro-img img{
+            width: 100%;
+            border-radius:0;
+        }
+        .intro-box {
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+            padding: 10px;
+       }
+        .intro-box .group{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+       }
+        #about .section-title{
+            font-size: 2.3rem;
+            text-align: left;
+       }
+        #about .des{
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 0;
+            padding-bottom: 15px;
+       }
+        #about .title{
+            font-size: 1.5rem;
+            text-align: left;
+       }
+        #about .text{
+            font-size: 1.5rem;
+            text-align: left;
+       }
+        #about .start{
+            font-size: 1.5rem;
+            width: 100%;
+       }
+/* 第四區塊 */
+       #people .container{
+        display: flex;
+        flex-direction:column;
+        align-items: center ;
+       }
+       #people .intro-title-div{
+        width: 50%;
+       }
+       #people .peoplebox-div{
+        display: flex;
+        flex-direction:row;
+       }
+       #people .peoplebox{
+        display: flex;
+        width: 33.33%;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+       }
+        #people .peoplebox .group{
+        display: flex;
+        flex-direction:row;
+       }
+       #people .group{
+        margin-top: 15px ;
+       }
+/* 第五區塊 */
+#clint .container{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+       }
